@@ -40,6 +40,7 @@ scrapedIdsPromise
         const yamlData = yaml.dump(ids, {indent: 2});
         fs.writeFileSync(filePath, yamlData);
         console.log(`IDs written to ${filePath}`);
+        console.log(`IDs saved are \n ${yamlData}`);
     })
     .catch((error) => {
         console.error('Error:', error);
