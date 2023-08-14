@@ -24,9 +24,9 @@ jobs:
       - name: Download playwright browser
         run: npx playwright install
 
-      - name: Run Playwright Test
-        run: npx playwright test
-
       - name: Scrap ids
         run: |
           node scapper/htmlScrapper.js
+
+      - name: Run Playwright Test
+        run: npx playwright test
