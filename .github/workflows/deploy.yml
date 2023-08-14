@@ -1,4 +1,4 @@
-name: Build React Redux Project
+name: Run PlayWright Tests
 
 on:
   push:
