@@ -1,4 +1,4 @@
-name: Run PlayWright Tests
+name: Run Playwright Tests
 
 on:
   push:
@@ -24,7 +24,8 @@ jobs:
       - name: Download playwright browser
         run: npx playwright install
 
-
+      - name: Run Playwright Test
+        run: npx playwright test
 
       - name: Scrap ids
         run: |
