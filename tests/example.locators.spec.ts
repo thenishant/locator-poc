@@ -47,7 +47,7 @@ test('should be able to add a todo', async ({page}) => {
     await page.locator(data.textBox).fill('Todo desc');
     await page.locator(data.submitButton).click();
 
-    // await expect(page.locator(data.cardTitle)).toHaveText('Todo Title');
+    await expect(page.locator(data.todoListHeader)).toHaveText('Your Todos');
     await expect(page.locator(data.pageTitle)).toHaveText('Todo App');
     // await expect(page.locator(data.cardDesc)).toHaveText('Todo desc');
 });
