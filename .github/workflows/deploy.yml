@@ -28,5 +28,4 @@ jobs:
 
       - name: Scrap ids
         run: |
-          tsc scapper/htmlScrapper.ts
           node scapper/htmlScrapper.js
